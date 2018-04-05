@@ -10,10 +10,10 @@ public class OverridingDemo {
 		A aobj= new B();	//dynamic method dispatch: superclass can hold subclass references
 		
 		
-		aobj.show();
+		aobj.show();		//method of B called 
 	
-		System.out.println(aobj.number1);;		
-		System.out.println(aobj.number2);;
+		System.out.println(aobj.number1);;	//though reference to B but shows value of A only 		
+		System.out.println(aobj.number2);;	//though reference to B but shows value of A only
 		
 		
 		
