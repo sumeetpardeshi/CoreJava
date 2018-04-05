@@ -11,14 +11,14 @@ public class InnerClassDemo {
 	private void accessInner() {
 		
 		Inner i= new Inner();
-		System.out.println(i.innervar++);;
+		System.out.println(i.innervar++);// parent has full acces to private members of child;
 
 		
 	}
 	
 	
 	class Inner{
-		private int innervar;
+		private int innervar=10;
 		
 		public Inner() {
 			System.out.println("constructor Inner");
