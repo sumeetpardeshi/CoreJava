@@ -2,23 +2,21 @@ package recursion;
 
 public class RecursionReverseString {
 
-	
-//	SUMEET
-//	
-//	static String reverse(String arg)
-//	{
-//		String rev="";
-//		
-//		reverse(arg.substring(0, arg.length()-1));
-//		
-//		return rev;
-//		
-//	}
+	 public static String reverse(String str){
+         String tmp=null;
+         if(str.length()>0) {
+                     System.out.print(str.charAt(str.length() - 1));
+                     tmp = reverse(str.substring(0, str.length() - 1));
+
+             }
+         return " Reversed";		//not necessary, if not required will need to add some ending condition.
+     }
+	 
 	public static void main(String[] args) {
 
 		String str="SUMEET";
 		
-		str.
+		System.out.println(reverse(str));
 		
 	}
 }
